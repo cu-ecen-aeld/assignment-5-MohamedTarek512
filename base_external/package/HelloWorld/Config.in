@@ -1,0 +1,5 @@
+config BR2_PACKAGE_HELLOWORLD
+    bool "HelloWorld"
+    help
+      This is a custom binary package called HelloWorld.
+
