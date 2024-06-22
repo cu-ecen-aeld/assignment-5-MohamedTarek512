@@ -3,6 +3,7 @@
 # automated testing using assignment-autotest.  It automates the
 # steps described in https://github.com/cu-ecen-5013/assignment-autotest/blob/master/README.md#running-tests
 export FORCE_UNSAFE_CONFIGURE=1
+export PATH=$PATH:/home/mohamed/tools/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin
 
 set -e
 
