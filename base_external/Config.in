@@ -1,2 +1,1 @@
-source "/home/mohamed/assignment-5-MohamedTarek512/base_external/package/HelloWorld/Config.in"
-source "/home/mohamed/assignment-5-MohamedTarek512/base_external/package/aesd-assignments/Config.in"
+source "../base_external/package/aesd-assignments/Config.in"
