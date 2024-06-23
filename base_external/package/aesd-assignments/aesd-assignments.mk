@@ -13,8 +13,7 @@ AESD_ASSIGNMENTS_LICENSE_FILES = LICENSE
 AESDSOCKET_INSTALL_STAGING = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-    aarch64-none-linux-gnu-gcc -Wall -Werror -o $(@D)/server/aesdsocket $(@D)/server/aesdsocket.c
-endef
+    /home/mohamed/tools/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc -Wall -Werror -o $(@D)/server/aesdsocket $(@D)/server/aesdsocket.cendef
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/aesdsocket
