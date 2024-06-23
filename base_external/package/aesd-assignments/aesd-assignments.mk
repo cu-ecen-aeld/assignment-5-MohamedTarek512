@@ -13,8 +13,7 @@ AESD_ASSIGNMENTS_LICENSE_FILES = LICENSE
 AESDSOCKET_INSTALL_STAGING = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-    $(MAKE) -C $(@D)/server
-endef
+    aarch64-none-linux-gnu-gcc -Wall -Werror -o $(@D)/server/aesdsocket $(@D)/server/aesdsocket.cendef
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/aesdsocket
